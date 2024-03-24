@@ -37,7 +37,7 @@ Get Request:
 /assign-student-mentor/:studentId
 
 Put Request:
-
+ 
 1.assign student to mentor
 
 /assign-student-mentor/:studentId/:mentorId
