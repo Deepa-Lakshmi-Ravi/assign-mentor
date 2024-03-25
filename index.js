@@ -14,7 +14,7 @@ app.use(express.json());
 // MongoDB connection
 mongoose
   .connect(
-    `mongodb+srv://${process.env.USER_NAME}:${process.env.password}@assigningmaster.0cygvrq.mongodb.net/Class`
+    `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@assigningmaster.0cygvrq.mongodb.net/Class`
   )
   .then(() => {
     console.log("Connected to MongoDB");
@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PROD_SERVER_PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
